@@ -1,5 +1,3 @@
-// src/services/jwt.service.ts
-
 import jwt from "jsonwebtoken";
 import { currentKid, keys } from "../utils/keyStore";
 
@@ -9,9 +7,7 @@ export const signToken = (payload: object) => {
   return jwt.sign(payload, privateKey, {
     algorithm: "RS256",
     expiresIn: "1d",
-    header: {
-      kid: currentKid,
-    },
+    keyid: currentKid,
   });
 };
 
