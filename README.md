@@ -21,7 +21,7 @@ A simple authentication API built with **Node.js**, **Express**, **TypeScript** 
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-username/jwt-rs256-api.git
+   git clone https://github.com/Sherifdeji/jwt-rs256Auth.git
    cd jwt-rs256-api
    ```
 
